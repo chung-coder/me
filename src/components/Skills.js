@@ -2,18 +2,18 @@ import React from 'react';
 
 const Skills = () => {
   const skills = [
-    { name: 'GCP', icon: '../images/icons/gcp.png' },
-    { name: 'Azure', icon: '../images/icons/azure.png' },
-    { name: 'Kubernetes', icon: '../images/icons/kubernetes.png' },
-    { name: 'Java', icon: '../images/icons/java.png' },
-    { name: 'Python', icon: '../images/icons/python.webp' },
-    { name: 'Django', icon: '../images/icons/django.svg' },
-    { name: 'JavaScript', icon: '../images/icons/javascript.png' },
-    { name: 'React', icon: '../images/icons/react.png' },
-    { name: 'MySQL', icon: '../images/icons/mysql.png' },
-    { name: 'PostgreSQL', icon: '../images/icons/postgresql.png' },
-    { name: 'Git', icon: '../images/icons/git.png' },
-    { name: 'Docker', icon: '../images/icons/docker.webp' },
+    { name: 'GCP', icon: '/images/icons/gcp.png' },
+    { name: 'Azure', icon: '/images/icons/azure.png' },
+    { name: 'Kubernetes', icon: '/images/icons/kubernetes.png' },
+    { name: 'Java', icon: '/images/icons/java.png' },
+    { name: 'Python', icon: '/images/icons/python.webp' },
+    { name: 'Django', icon: '/images/icons/django.svg' },
+    { name: 'JavaScript', icon: '/images/icons/javascript.png' },
+    { name: 'React', icon: '/images/icons/react.png' },
+    { name: 'MySQL', icon: '/images/icons/mysql.png' },
+    { name: 'PostgreSQL', icon: '/images/icons/postgresql.png' },
+    { name: 'Git', icon: '/images/icons/git.png' },
+    { name: 'Docker', icon: '/images/icons/docker.webp' },
   ];
 
   return (
@@ -31,7 +31,7 @@ const Skills = () => {
               className="flex flex-col items-center p-4 rounded-lg"
             >
               <img 
-                src={skill.icon} 
+                src={`${process.env.PUBLIC_URL}${skill.icon}`}
                 alt={skill.name} 
                 className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-3 dark:filter dark:brightness-90" 
               />

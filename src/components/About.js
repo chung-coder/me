@@ -51,8 +51,8 @@ const About = () => {
           >
             <div className="relative aspect-square">
               <img
-                src="/images/me.png"
-                alt="Peggy Yen"
+                src={`${process.env.PUBLIC_URL}/images/me.png`}
+                alt="Ting-Chen Yen"
                 className="rounded-2xl w-full h-full object-cover object-center shadow-lg transition-transform duration-300"
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-black/10 dark:ring-white/10"></div>

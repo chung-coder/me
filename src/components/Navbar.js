@@ -30,7 +30,7 @@ const Navbar = () => {
               className="focus:outline-none"
             >
               <img
-                src="/images/logo.svg"
+                src={`${process.env.PUBLIC_URL}/images/logo.svg`}
                 alt="Peggy Logo"
                 className="h-8 w-auto dark:filter dark:brightness-100"
               />
