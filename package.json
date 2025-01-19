@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio",
   "version": "0.1.0",
-  "homepage": "https://chung-coder.github.io/me",
+  "homepage": "https://ting-chen.me",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
