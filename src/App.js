@@ -6,7 +6,6 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { ThemeProvider } from './context/ThemeContext';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
@@ -40,30 +39,28 @@ function App() {
   }, []);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <ThemeProvider>
-        <div className="bg-white dark:bg-dark min-h-screen">
-          <Navbar />
-          <main>
-            <section id="hero">
-              <Hero />
-            </section>
-            <section id="about">
-              <About />
-            </section>
-            <section id="skills">
-              <Skills />
-            </section>
-            <section id="projects">
-              <Projects />
-            </section>
-            <section id="contact">
-              <Contact />
-            </section>
-          </main>
-        </div>
-      </ThemeProvider>
-    </Router>
+    <ThemeProvider>
+      <div className="bg-white dark:bg-dark min-h-screen">
+        <Navbar />
+        <main>
+          <section id="hero">
+            <Hero />
+          </section>
+          <section id="about">
+            <About />
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section id="projects">
+            <Projects />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
+        </main>
+      </div>
+    </ThemeProvider>
   );
 }
 
