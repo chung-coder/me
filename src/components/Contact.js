@@ -38,6 +38,12 @@ const Contact = () => {
           return 'Message must be at least 10 characters long';
         }
         break;
+      case 'name':
+        // 名字欄位只需要非空檢查，已經在上面完成
+        break;
+      default:
+        // 處理其他未預期的欄位名稱
+        break;
     }
     return '';
   };
