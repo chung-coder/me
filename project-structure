@@ -1,0 +1,20 @@
+personal-portfolio/
+├── public/
+│   ├── icons/
+│   │   ├── javascript.svg
+│   │   ├── react.svg
+│   │   ├── nodejs.svg
+│   │   └── ...
+│   └── images/
+│       ├── profile.jpg
+│       └── projects/
+├── src/
+│   ├── components/
+│   │   ├── Hero.js
+│   │   ├── Skills.js
+│   │   ├── Experience.js
+│   │   ├── Projects.js
+│   │   ├── Contact.js
+│   │   └── Navbar.js
+│   ├── App.js
+│   └── index.js 
