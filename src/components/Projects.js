@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Projects = () => {
   const projects = [
@@ -12,6 +14,7 @@ const Projects = () => {
         "Personalized writing prompts and guidance"
       ],
       image: "/images/projects/writing.jpg",
+      imagePosition: "center",
       technologies: ["React", "Django", "MySQL"],
     },
     {
@@ -23,6 +26,7 @@ const Projects = () => {
         "Command recording and replay"
       ],
       image: "/images/projects/editor.jpg",
+      imagePosition: "center",
       technologies: ["Java", "Maven", "JUnit", "Git"],
       liveLink: "https://chung-coder.github.io/ACO-Editor/",
       githubLink: "https://github.com/chung-coder/ACO-Editor"
@@ -36,6 +40,7 @@ const Projects = () => {
         "Reduces operational costs"
       ],
       image: "/images/projects/emr.jpeg",
+      imagePosition: "center",
       technologies: ["Java", "MySQL", "Git"],
       // liveLink: "https://github.com/chung-coder/EMR_system_MISSA",
       githubLink: "https://github.com/chung-coder/EMR_system_MISSA"
@@ -49,6 +54,7 @@ const Projects = () => {
         "Speech content and delivery"
       ],
       image: "/images/projects/talkversity.jpg",
+      imagePosition: "center",
       technologies: ["React", "JavaScript"],
       liveLink: "https://youtu.be/AxzI3nR-iVY?si=6XPdbpXi9bdXl6yT",
       githubLink: "https://github.com/chung-coder/Talkversity"
@@ -62,6 +68,7 @@ const Projects = () => {
         "Custom cocktail recipes"
       ],
       image: "/images/projects/circuit-design.jpg",
+      imagePosition: "center",
       technologies: ["Raspberry Pi", "Python 3.7", "Open-Vino", "Python Telegram Bot"],
       liveLink: "https://youtu.be/BHtmUCMAgPI?si=rJfayh-vFdJ-utqz",
       githubLink: "https://github.com/chung-coder/Iot-bartender/"
@@ -92,10 +99,13 @@ const Projects = () => {
               >
                 {/* Project Image */}
                 <div className={`relative aspect-[16/9] ${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
-                  <img
+                  <LazyLoadImage
                     src={`${process.env.PUBLIC_URL}${project.image}`}
                     alt={project.title}
-                    className="rounded-xl w-full h-full object-cover object-top shadow-lg"
+                    effect="blur"
+                    wrapperClassName="w-full h-full"
+                    className={`rounded-xl w-full h-full object-cover shadow-lg
+                      ${project.imagePosition === 'center' ? 'object-center' : 'object-top'}`}
                   />
                   <div className="absolute inset-0 bg-gray-900 opacity-0 hover:opacity-75 transition-opacity duration-300 rounded-xl flex items-center justify-center space-x-4">
                     {project.liveLink && (

@@ -1,4 +1,6 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Skills = () => {
   const skills = [
@@ -30,10 +32,11 @@ const Skills = () => {
               key={index} 
               className="flex flex-col items-center p-4 rounded-lg"
             >
-              <img 
+              <LazyLoadImage
                 src={`${process.env.PUBLIC_URL}${skill.icon}`}
-                alt={skill.name} 
-                className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-3 dark:filter dark:brightness-90" 
+                alt={skill.name}
+                effect="blur"
+                className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mb-3 dark:filter dark:brightness-90"
               />
               <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300">{skill.name}</span>
             </div>

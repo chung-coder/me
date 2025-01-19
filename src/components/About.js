@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const About = () => {
   const experiences = [
@@ -50,9 +52,11 @@ const About = () => {
             transition={{ duration: 1, ease: "easeOut" }}
           >
             <div className="relative aspect-square">
-              <img
-                src={`${process.env.PUBLIC_URL}/images/me.png`}
-                alt="Ting-Chen Yen"
+              <LazyLoadImage
+                src="/images/me.jpg"
+                alt="Peggy Yen"
+                effect="blur"
+                wrapperClassName="w-full h-full"
                 className="rounded-2xl w-full h-full object-cover object-center shadow-lg transition-transform duration-300"
               />
               <div className="absolute inset-0 rounded-2xl ring-1 ring-black/10 dark:ring-white/10"></div>
