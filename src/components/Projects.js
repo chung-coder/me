@@ -11,7 +11,7 @@ const Projects = () => {
         "Progress tracking with diary statistics",
         "Personalized writing prompts and guidance"
       ],
-      image: "/me/images/projects/writing.jpg",
+      image: "/images/projects/writing.jpg",
       technologies: ["React", "Django", "MySQL"],
     },
     {
@@ -22,7 +22,7 @@ const Projects = () => {
         "Undo/Redo functionality",
         "Command recording and replay"
       ],
-      image: "/me/images/projects/editor.jpg",
+      image: "/images/projects/editor.jpg",
       technologies: ["Java", "Maven", "JUnit", "Git"],
       liveLink: "https://chung-coder.github.io/ACO-Editor/",
       githubLink: "https://github.com/chung-coder/ACO-Editor"
@@ -35,7 +35,7 @@ const Projects = () => {
         "Improves healthcare efficiency",
         "Reduces operational costs"
       ],
-      image: "/me/images/projects/emr.jpeg",
+      image: "/images/projects/emr.jpeg",
       technologies: ["Java", "MySQL", "Git"],
       // liveLink: "https://github.com/chung-coder/EMR_system_MISSA",
       githubLink: "https://github.com/chung-coder/EMR_system_MISSA"
@@ -48,7 +48,7 @@ const Projects = () => {
         "Facial expressions",
         "Speech content and delivery"
       ],
-      image: "/me/images/projects/talkversity.jpg",
+      image: "/images/projects/talkversity.jpg",
       technologies: ["React", "JavaScript"],
       liveLink: "https://youtu.be/AxzI3nR-iVY?si=6XPdbpXi9bdXl6yT",
       githubLink: "https://github.com/chung-coder/Talkversity"
@@ -61,7 +61,7 @@ const Projects = () => {
         "Age verification system",
         "Custom cocktail recipes"
       ],
-      image: "/me/images/projects/circuit-design.jpg",
+      image: "/images/projects/circuit-design.jpg",
       technologies: ["Raspberry Pi", "Python 3.7", "Open-Vino", "Python Telegram Bot"],
       liveLink: "https://youtu.be/BHtmUCMAgPI?si=rJfayh-vFdJ-utqz",
       githubLink: "https://github.com/chung-coder/Iot-bartender/"
