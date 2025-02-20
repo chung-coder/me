@@ -17,6 +17,7 @@ const Projects = () => {
       image: "/images/projects/writing.jpg",
       imagePosition: "center",
       technologies: ["React", "Django", "MySQL"],
+      githubLink: "https://github.com/chung-coder/writingCompanion",
     },
     {
       title: "Mini Text Editor",
