@@ -188,7 +188,7 @@ const Contact = () => {
                     />
                   </svg>
                   <span className="text-gray-600 dark:text-gray-300">
-                    Rennes, France
+                    Espoo, Finland
                   </span>
                 </div>
               </div>
