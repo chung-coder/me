@@ -1,26 +1,26 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import React from "react";
+import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const About = () => {
   const experiences = [
     {
-      company: 'Cloud Mile Inc.',
-      companyLink: 'https://mile.cloud/',
-      location: 'Taiwan',
-      position: 'Cloud Support Engineer',
-      period: 'Jun 2023 - Aug 2024',
-      technologies: ['Google Cloud Platform', 'Kubernetes', 'Docker']
+      company: "Cloud Mile Inc.",
+      companyLink: "https://mile.cloud/",
+      location: "Taiwan",
+      position: "Cloud Support Engineer",
+      period: "Jun 2023 - Aug 2024",
+      technologies: ["Google Cloud Platform", "Kubernetes", "Docker"],
     },
     {
-      company: 'Microsoft',
-      companyLink: 'https://www.microsoft.com/en-us/hub?oneroute=true',
-      location: 'Taiwan',
-      position: 'Software Engineer Intern',
-      period: 'Jul 2021 - Jun 2022',
-      technologies: ['Azure', 'Kubernetes', 'Python', 'React']
-    }
+      company: "Microsoft",
+      companyLink: "https://www.microsoft.com/en-us/hub?oneroute=true",
+      location: "Taiwan",
+      position: "Software Engineer Intern",
+      period: "Jul 2021 - Jun 2022",
+      technologies: ["Azure", "Kubernetes", "Python", "React"],
+    },
   ];
 
   return (
@@ -34,24 +34,30 @@ const About = () => {
             </h2>
             <div className="space-y-4">
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                I'm Ting-Chen, a problem-solver at heart and a certified cloud enthusiast by trade.
+                I'm Ting-Chen, a problem-solver and a certified cloud
+                enthusiast.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                My journey began in Taiwan 🇹🇼, where I studied Information Management, and it's taken me to France 🇫🇷 and Finland 🇫🇮, where I'm pursuing a dual Master's in Cloud and Network Infrastructures.
+                My journey began in Taiwan 🇹🇼, where I studied Information
+                Management, and it's taken me to France 🇫🇷 and Finland 🇫🇮, where
+                I'm pursuing a dual Master's in Cloud and Network
+                Infrastructures at Aalto University and Rennes of University.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                My passion lies in creating practical, scalable solutions using cloud technologies to solve real-world problems.
+                I'm interested in cloud computing, distributed systems, and
+                microservices. Feel free to get in touch with me. Let’s explore
+                opportunities to build something amazing together!
               </p>
             </div>
           </div>
 
-          <motion.div 
+          <motion.div
             className="w-64 sm:w-72 mx-auto lg:mx-0 lg:mt-[52px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <div className="relative aspect-square">
+            <div className="relative aspect-[3/4]">
               <LazyLoadImage
                 src="/images/me.jpg"
                 alt="Peggy Yen"
@@ -110,11 +116,14 @@ const About = () => {
             </h3>
             <div className="space-y-8">
               {experiences.map((exp, index) => (
-                <div key={index} className="relative pl-6 border-l-2 border-primary">
+                <div
+                  key={index}
+                  className="relative pl-6 border-l-2 border-primary"
+                >
                   <div className="absolute w-3 h-3 bg-primary rounded-full -left-[7px] top-2"></div>
                   <div>
                     <div className="flex items-center gap-3 flex-wrap">
-                      <a 
+                      <a
                         href={exp.companyLink}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -153,4 +162,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;
