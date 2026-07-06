@@ -161,10 +161,10 @@ const Contact = () => {
                     />
                   </svg>
                   <a
-                    href="mailto:peggy.yen1999@gmail.com"
+                    href="mailto:tingchen.yen123@gmail.com"
                     className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                   >
-                    peggy.yen1999@gmail.com
+                    tingchen.yen123@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center">
@@ -188,7 +188,7 @@ const Contact = () => {
                     />
                   </svg>
                   <span className="text-gray-600 dark:text-gray-300">
-                    Espoo, Finland
+                    Taiwan
                   </span>
                 </div>
               </div>
